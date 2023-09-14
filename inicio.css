@@ -222,6 +222,9 @@ body h4 {
     margin: 2.5vh;
     width: 25vh;
     height: 25vh;
+    float: left;
+    overflow: hidden;
+    color: white;
 }
 
 
@@ -312,7 +315,26 @@ body h4 {
     border-bottom: 2px solid white;
 }
 
+.hidden {
+    display: none;
+}
 
+.button {
+    position: absolute;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+}
 
-  
-  
+.button:hover{
+    cursor: pointer;
+}
+
+.button-back {
+    left: 500px;
+    transform: rotate(180deg);
+}
+
+.button-next {
+    right: 350px;
+}

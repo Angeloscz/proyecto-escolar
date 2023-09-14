@@ -7,7 +7,7 @@
     <title>Beauty And Safe</title>
 </head>
 <body>
-
+    <script type="module" src="js/main.js"></script>
     <h2 class="titulo"><span>BEAUTY AND SAFE</span></h2>
     <h4>"Salvando miradas"</h4>
     <div class="logo"></div>
@@ -36,11 +36,18 @@
     <div class="contenido">
         <h2 class="subtitulo">Descubre nuevos productos</h2>
         <div class="carrusel">
-            <div class="element"></div>
-            <div class="element"></div>
-            <div class="element"></div>
-            <div class="element"></div>
-            <div class="element"></div>
+            <div class="elementos">
+                <div class="element active">0</div>
+                <div class="element active">1</div>
+                <div class="element active">2</div>
+                <div class="element hidden">3</div>
+                <div class="element hidden">4</div>
+            </div>
+            <div class="scroll">
+                <button class="button button-back"><img src="img/arrow-next.svg" alt=""></button>
+                <button class="button button-next"><img src="img/arrow-next.svg" alt=""></button>
+            </div>
+            
         </div>
         
     </div>
@@ -53,7 +60,7 @@
         <p>Investigacion e informacion de la pagina web: <br>
             Lesly Zapata <br>
             Valeria Mira <br>
-            
+
         </p>
         <div class="line">
             <a href=""><img  src="img/face.png" alt=""></a>
@@ -65,8 +72,5 @@
         <p>¿Te interesa hacer una pagina web? : <a class="numero" href="">+57 323 303 35 38</a></p>
         bautyandsafe003@gmail.com
     </div>
-
-    
-    
 </body>
 </html>
