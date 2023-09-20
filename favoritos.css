@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: aquamarine;
+    background-image: url(img/fonfo.jpg);
+  }
+  
+  .navegacion {
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+  flex-direction: column;
+    height: 60vh;
+    margin-top: -5vh;
+    position: fixed;
+    width: 12vh;
+    
+  }
+  
+  @keyframes EntradaDeIzquierda {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes EntradaDeDerecha {
+    from {
+        transform: translatey(-200%);
+    }
+    to {
+        transform: translatey(0);
+    }
+  }
+  
+  span {
+    display: block;
+    font-family: zincel;
+    white-space: nowrap;
+    border-right: 4px solid color(transparent);
+    width: 19ch;
+  
+    animation: typing 2s steps(19), 
+    blink .5s infinite step-end alternate ;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {border-color: transparent;}
+  }
+  
+  .titulo {
+    border: 1px solid black;
+    padding: 3px;
+    font-family: zincel;
+    margin-top: -18vh;
+    margin-left: 3vh;
+    position: absolute;
+  }
+  
+  body h4 {
+    position: absolute;
+    left: 40vh;
+    top: 20vh;
+  }
+  
+  .quienes-somos {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    left: 145vh;
+    
+  }
+  
+  .logo {
+    background-color: black;
+    position: absolute;
+    border-radius: 100%;
+    top: 3vh;
+    left: 90vh;
+    width: 30vh;
+    height: 30vh;
+    animation: Logo 
+    2s ease;
+  }
+  
+  @keyframes Logo {
+    from {
+        transform: translatey(-200%);
+    }
+    to {
+        transform: translatey(0);
+    }
+  }
+  
+  
+  .navegacion img {
+    width: 7vh;
+    margin-top: 19px;
+    margin-left: 12px;
+  }
+  
+  .inicio {
+    background-color: rgb(248, 156, 244);
+    transition-duration: 0.5s;
+    width: 12vh;
+    height: 12vh;
+  
+  }
+  
+  .inicio:hover {
+    margin-left: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  .tienda {
+    background-color: rgb(248, 156, 244);
+    transition-duration: 0.5s;
+    width: 12vh;
+    height: 12vh;
+  
+  }
+  
+  .tienda:hover {
+    margin-left: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  .info {
+    background-color: rgb(248, 156, 244);
+    transition-duration: 0.5s;
+    width: 12vh;
+    height: 12vh;
+  
+  }
+  
+  .info:hover {
+    margin-left: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  .favoritos {
+    background-color: rgb(248, 156, 244);
+    border-radius: 0 0 10px 0;
+    transition-duration: 0.5s;
+    width: 12vh;
+    height: 12vh;
+  
+  }
+  
+  .input-container {
+    background-color: rgb(248, 156, 244);
+    border-radius: 0 10px 0 0;
+    width: 12vh;
+    height: 12vh;
+  
+  }
+  
+  .favoritos:hover {
+    margin-left: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  .contenido {
+    background-color: rgb(255, 188, 252);
+    border-top: 2px solid black;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+	flex-wrap: wrap;
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+    margin-left: 24vh;
+    width: 170vh;
+    left: 30vh;
+    margin-top:25vh ;
+  }
+
+  .prime {
+    margin-top: 27vh;
+  }
+
+  .imagen p {
+    padding-bottom: 1vh;
+  }
+
+  .precio {
+    padding-top: 9vh;
+  }
+
+  .cora {
+    color: palevioletred;
+    position: absolute;
+    font-size: 30px;
+    left: 23vh;
+    top: 44vh;
+  }
+
+  .card {
+    background-color: rgb(252, 255, 255);
+    position: relative;
+    border-radius: 2vh;
+    display: flex;
+	justify-content: center;
+    height: 50vh;
+    width: 30vh;
+    margin: 3vh;
+  }
+
+  .imagen {
+    background-color: black;
+    margin: 3vh;
+    height: 25vh;
+    width: 25vh;
+}
+  
+  .pie-de-pagina {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100%;
+    top: 100%;
+    height: auto;
+    padding-bottom: 2vh;
+  
+  }
+  
+  .pie-de-pagina p {
+    padding: 5px;
+  }
+  
+  .carrusel {
+    background-color: aqua;
+    display: inline-block;
+  justify-content: center;
+  display: flex;
+    width: 100%;
+    height: 30vh;
+  
+  }
+  
+  .element {
+    background-color: black;
+    margin: 2.5vh;
+    width: 25vh;
+    height: 25vh;
+  }
+  
+  
+  
+  .subtitulo {
+    top: 40vh;
+    left: 30vh;
+    position: absolute;
+  }
+  
+  .input-container {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 18px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  .input::placeholder {
+    color: transparent;
+  }
+  
+  .input:focus::placeholder {
+    color: rgb(131, 128, 128);
+  }
+  
+  .input:focus,.input:not(:placeholder-shown) {
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 3vh;
+    margin-top: 2vh;
+    height: 0.5vh;
+    width: 290px;
+    cursor: none;
+    padding: 18px 16px 18px 40px;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1.5vh;
+    top: 3vh;
+    height: 50px;
+    width: 50px;
+    background-color: #00000000;
+    border-radius: 100%;
+    z-index: -1;
+    fill: rgb(0, 0, 0);
+  }
+  
+  .input:hover + .icon {
+    transform: rotate(360deg);
+    transition: .2s ease-in-out;
+  }
+  
+  .input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .pie-de-pagina img {
+    margin: 2vh;
+    width: 10vh;
+  }
+  
+  .pie-de-pagina img:hover {
+    rotate: 360deg ;
+    transition-duration: 0.5s;
+  }
+  
+  .numero {
+    color: white;
+    text-decoration:underline;
+  }
+  
+  .line {
+    border-bottom: 2px solid white;
+  }
+  
+  
+  .heart-container {
+    --heart-color: rgb(255, 91, 137);
+    position: relative;
+    left: 50vh;
+    top: 2vh;
+    width: 30px;
+    height: 30px;
+    transition: .3s;
+  }
+  
+  .heart-container .checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .heart-container .svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart-container .svg-outline,
+          .heart-container .svg-filled {
+    fill: var(--heart-color);
+    position: absolute;
+  }
+  
+  .heart-container .svg-filled {
+    animation: keyframes-svg-filled 1s;
+    display: none;
+  }
+  
+  .heart-container .svg-celebrate {
+    position: absolute;
+    animation: keyframes-svg-celebrate .5s;
+    animation-fill-mode: forwards;
+    display: none;
+    stroke: var(--heart-color);
+    fill: var(--heart-color);
+    stroke-width: 2px;
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-filled {
+    display: block
+  }
+  
+  .heart-container .checkbox:checked~.svg-container .svg-celebrate {
+    display: block
+  }
+  
+  @keyframes keyframes-svg-filled {
+    0% {
+      transform: scale(0);
+    }
+  
+    25% {
+      transform: scale(1.2);
+    }
+  
+    50% {
+      transform: scale(1);
+      filter: brightness(1.5);
+    }
+  }
+  
+  @keyframes keyframes-svg-celebrate {
+    0% {
+      transform: scale(0);
+    }
+  
+    50% {
+      opacity: 1;
+      filter: brightness(1.5);
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  
